@@ -1,10 +1,20 @@
-/*SET @@AUTOCOMMIT = 1;
+/* 
+Enter first 6 lines to create database
+in ampps SQL tab
+*/
+SET @@AUTOCOMMIT = 1;
+ 
+ drop database if exists MCP;
+ 
+ create database MCP;
+ 
+  use MCP;
 
-DROP DATABASE IF EXISTS MCP;
-CREATE DATABASE MCP;
+  create user dbadmin@localhost;
+  grant all privileges on MCP.* to dbadmin@localhost;
 
-USE MCP;*-*/
 
+/*
 DROP TABLE Customer;
 DROP TABLE CustResAddr;
 DROP TABLE CustDelAddr;
@@ -13,6 +23,11 @@ DROP TABLE Card;
 DROP TABLE Cart;
 DROP TABLE Checkout;
 DROP TABLE Invoice;
+*/
+
+/* 
+Enter all the following into ampps SQL tab after selecting the MCP database.
+*/
 
 CREATE TABLE Customer(
 	custId varchar(8) NOT NULL,
@@ -93,6 +108,3 @@ CREATE TABLE Invoice (
 	FOREIGN KEY(custId) REFERENCES Customer(custId),
 	FOREIGN KEY(cartId) REFERENCES Cart(cartId)
 );
-
-/*CREATE user IF NOT EXISTS dbadmin@localhost;
-GRANT all privileges ON SalesDB TO dbadmin@localhost;*/
