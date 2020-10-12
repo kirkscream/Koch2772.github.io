@@ -1,0 +1,122 @@
+html {
+    margin: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    float: none;
+}
+
+h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+
+ul {
+    list-style-type: none;
+    overflow: auto;
+    padding-left: 0px;
+}
+
+#title{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+/** CATAGORY CONTAINERS **/
+
+/** Holds all the product images/links **/
+
+
+.catagory-container h2 {
+    color: mediumpurple;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.catagory-container a {
+    text-decoration: none;
+    display: block;
+}
+
+/** product images/text for catagory **/
+a:hover h2 {
+    color: darkmagenta;
+}
+
+.catagory-product {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 100px;
+    height: 135px;
+    float: left;
+}
+
+
+/** PRODUCT CONTAINERS **/
+
+.product-container {
+    float: left;
+    
+}
+
+.product-desc {
+    padding-left: 5px;
+    float: right;
+}
+
+a.product-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+.product-desc p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/** MENU/TOP MENU BAR **/
+
+ul#menu {
+    border-bottom: solid;
+    border-bottom-color: #ddd;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menucontainer {
+    text-align: center;
+}
+
+#menu a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
+
+#menu a:hover {
+    color: #1565c0;
+}
+
+#menu a.selected {
+    color: #1565c0;
+    font-weight: bold;
+}
