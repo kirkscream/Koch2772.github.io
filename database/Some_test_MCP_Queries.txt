@@ -1,0 +1,11 @@
+
+
+SELECT cartId, custId, stockNum, qty, unitCost, totalCost FROM Cart WHERE cartId like '0000613';
+
+SELECT * from Cart WHERE cartId like '%612';
+
+SELECT sum(totalCost)+20.00 AS amntToPay from Cart WHERE cartId like '%612';
+
+SELECT c.stockNum, p.productName, c.unitCost, c.qty, c.totalCost, z.title, z.fname, z.lname FROM Cart c, Product p, Customer z WHERE c.stockNum=p.stockNum and c.custId=z.custId and cartId LIKE '%612';
+
+SELECT c.stockNum, p.productName, c.unitCost, c.qty, c.totalCost, z.title, z.fname, z.lname FROM Cart c, Product p, Customer z WHERE c.stockNum=p.stockNum and c.custId=z.custId and c.custId LIKE '4888';
