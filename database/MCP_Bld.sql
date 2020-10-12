@@ -73,4 +73,4 @@ CREATE TABLE Invoice (
 );
 
 CREATE user IF NOT EXISTS dbadmin@localhost;
-GRANT all privileges ON SalesDB TO dbadmin@localhost;
+GRANT all privileges ON MCP.* TO dbadmin@localhost;
