@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+    @font-face {
+        font-family: 'Mystical';
+            src: url(fonts/DsMysticora-d9dZ.ttf);
+    }
+    </style>
+    
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
@@ -10,10 +17,11 @@
   </head>
   <body>
     <div class="content-body">
-    <a href="index.php" id="title"><h1><b>~~ The Mystic Shop ~~</b></h1></a>
-      <?php require_once "inc/menu.inc.php"; ?>
+      <!-- Website title -->        
+      <a href="index.php" id="title"><div class="mysticfont"><h1>Mystic Shop</h1></div></h1></a>
 
-      <p>About Us - The Mystic Shop</p>
+      <!-- The menu bar html -->        
+      <?php require_once "inc/menu.inc.php"; ?>
 
       <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et odio pellentesque diam volutpat commodo sed. Consequat nisl vel pretium lectus quam id leo in. Non sodales neque sodales ut etiam sit amet nisl purus. Morbi tristique senectus et netus et malesuada fames. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Consectetur libero id faucibus nisl. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Risus feugiat in ante metus dictum at tempor commodo. Ultrices eros in cursus turpis massa tincidunt. Urna duis convallis convallis tellus id interdum. Mattis molestie a iaculis at erat pellentesque adipiscing. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget.</p>

@@ -8,6 +8,7 @@
             src: url(fonts/DsMysticora-d9dZ.ttf);
         }
     </style>
+    
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
     <meta name="description" content="Assignment 2 - COMP2772" />
@@ -17,7 +18,8 @@
   <body>
     <div class="title">
     <div class="mysticfont">
-      <h1>Mystic Shop</h1>
+        <!-- Website title -->        
+        <a href="index.php" id="title"><div class="mysticfont"><h1>Mystic Shop</h1></div></h1></a>
     </div>
 
     <!-- The menu bar html -->        
@@ -76,7 +78,7 @@
             <ul class="catagory-list">
                 <li>
                     <div class="catagory-product-1x4">
-                        <a href="fang.php">
+                        <a href="teeth.php">
                             <img src="productimages/Basilisk Fang.jpg" alt="productimg">
                             <h2>Exotic Animal Fang's</h2>
                         </a>

@@ -7,6 +7,7 @@
             src: url(fonts/DsMysticora-d9dZ.ttf);
         }
     </style>
+    
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
@@ -26,7 +27,7 @@
             <ul class="catagory-list">
                 <li>
                     <div class="catagory-product">
-                        <a href="fang.php">
+                        <a href="teeth.php">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Exotic Animal Fang's</h2>
                         </a>

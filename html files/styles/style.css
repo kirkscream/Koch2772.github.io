@@ -161,6 +161,7 @@ a:hover h2 {
 
 .product-container {
     float: left;
+    align-self: center;
     
 }
 

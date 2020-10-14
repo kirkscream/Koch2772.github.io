@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+    @font-face {
+        font-family: 'Mystical';
+            src: url(fonts/DsMysticora-d9dZ.ttf);
+    }
+    </style>
+
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
@@ -10,10 +17,11 @@
   </head>
   <body>
     <div>
-        <a href="index.php" id="title"><h1><b>~~ The Mystic Shop ~~</b></h1></a>
-        <?php require_once "inc/menu.inc.php"; ?>
+        <!-- Website title -->        
+        <a href="index.php" id="title"><div class="mysticfont"><h1>Mystic Shop</h1></div></h1></a>
 
-        <p>Mystic Animal Fangs</p>
+        <!-- The menu bar html -->        
+        <?php require_once "inc/menu.inc.php"; ?>
 
         <div class="productslist">
             <div class="product-container">
@@ -29,7 +37,7 @@
 
                         while ($row = mysqli_fetch_assoc($result)) {
                             ?>
-                            <a href="#" class="product-title"><?php echo $row["productName"]; ?></a>
+                            <a href="fang.php" class="product-title"><?php echo $row["productName"]; ?></a>
                             <p><?php echo $row["description"]; ?></p>
                  <?php }
                     } 

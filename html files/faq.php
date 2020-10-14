@@ -7,6 +7,7 @@
             src: url(fonts/DsMysticora-d9dZ.ttf);
     }
     </style>
+    
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
