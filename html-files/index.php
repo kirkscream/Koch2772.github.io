@@ -29,42 +29,48 @@
 
 
     <div class="main-page-content">
+
+        <!-- Containers for Hot Items -->   
         <div class="hot-items">
             <div class="mysticfont">
                  <h2>Hot Items</h2>
             </div>
-            <div class="catagory-container">
-            <ul class="catagory-list">
+            <div class="category-container">
+            <ul class="category-list">
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
-                        <a href="#">
+                    <div class="category-product-1x4">
+                        <a href="product-whiteUniHorn.php">
                             <img src="productimages/Unicorn Horn.jpg" alt="productimg">
                             <h2>White Unicorn Horn</h2>
                         </a>
                     </div>
                 </li>
 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
-                        <a href="#">
+                    <div class="category-product-1x4">
+                        <a href="product-pheonixF.php">
                             <img src="productimages/Phoenix Feather.jpg" alt="productimg">
                             <h2>Phoenix Feather</h2>
                         </a>
                     </div>
                 </li>
                 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
-                        <a href="fang.php">
+                    <div class="category-product-1x4">
+                        <a href="product-fang.php">
                             <img src="productimages/Basilisk Fang.jpg" alt="productimg">
                             <h2>Basilisk Fang</h2>
                         </a>
                     </div>
                 </li>
 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
-                        <a href="Categories.php">
+                    <div class="category-product-1x4">
+                        <a href="product-bronzeDS.php">
                             <img src="productimages/BronzeDragonScales.jpg" alt="productimg">
                             <h2>Bronze Dragon Scale</h2>
                         </a>
@@ -72,23 +78,28 @@
                 </li>
             </div>
         </div>
+
+        <!-- Containers for Category links -->   
         <div class="categories">
             <div class="mysticfont">
                  <h2>Categories</h2>
             </div>
-            <div class="catagory-container">
-            <ul class="catagory-list">
+            <div class="category-container">
+            <ul class="category-list">
+
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
-                        <a href="teeth.php">
+                    <div class="category-product-1x4">
+                        <a href="category-teeth.php">
                             <img src="productimages/Basilisk Fang.jpg" alt="productimg">
                             <h2>Exotic Animal Fang's</h2>
                         </a>
                     </div>
                 </li>
 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
+                    <div class="category-product-1x4">
                         <a href="#">
                             <img src="productimages/RainbowHorn.jpg" alt="productimg">
                             <h2>Unicorn Horns</h2>
@@ -97,8 +108,9 @@
                     </div>
                 </li>
 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
+                    <div class="category-product-1x4">
                         <a href="#">
                             <img src="productimages/PinkDragonScales.jpg" alt="productimg">
                             <h2>Dragon Scales</h2>
@@ -106,8 +118,9 @@
                     </div>
                 </li>
 
+                <!-- Item -->  
                 <li>
-                    <div class="catagory-product-1x4">
+                    <div class="category-product-1x4">
                         <a href="Categories.php">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>All Categories</h2>

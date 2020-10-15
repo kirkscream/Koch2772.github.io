@@ -39,7 +39,7 @@
 
                         while ($row = mysqli_fetch_assoc($result)) {
                             ?>
-                            <a href="fang.php" class="product-title"><?php echo $row["productName"]; ?></a>
+                            <a href="product-fang.php" class="product-title"><?php echo $row["productName"]; ?></a>
                             <p><?php echo $row["description"]; ?></p>
                  <?php }
                     } 

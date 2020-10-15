@@ -25,11 +25,11 @@
         <?php require_once "inc/menu.inc.php"; ?>
 
 
-        <div class="catagory-container">
-            <ul class="catagory-list">
+        <div class="category-container">
+            <ul class="category-list">
                 <li>
-                    <div class="catagory-product">
-                        <a href="teeth.php">
+                    <div class="category-product">
+                        <a href="category-teeth.php">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Exotic Animal Fang's</h2>
                         </a>
@@ -37,7 +37,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Unicorn Horns</h2>
@@ -46,7 +46,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Phoenix Feathers</h2>
@@ -55,7 +55,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>TEST</h2>
@@ -64,7 +64,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>TEST</h2>
@@ -73,7 +73,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>TEST</h2>
@@ -82,7 +82,7 @@
                 </li>
 
                 <li>
-                    <div class="catagory-product">
+                    <div class="category-product">
                         <a href="#">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>TEST</h2>
