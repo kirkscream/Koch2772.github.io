@@ -13,6 +13,14 @@ CREATE TABLE Customer(
 	PRIMARY KEY(custId)
 ) AUTO_INCREMENT = 1;
 
+CREATE TABLE Login(
+	custId varchar(8) NOT NULL,
+	usrNme varchar (20) NOT NULL,
+	pwd varchar (20)NOT NULl,
+	PRIMARY KEY(custId),
+	FOREIGN KEY(CustId) REFERENCES Customer(custId)
+);
+
 CREATE TABLE CustResAddr(
 	custId varchar(8),
 	Street varchar(45),
@@ -72,5 +80,5 @@ CREATE TABLE Invoice (
 	FOREIGN KEY(custId) REFERENCES Customer(custId)
 );
 
-CREATE user IF NOT EXISTS dbadmin@localhost;
+CREATE user IF NOT EXISTS 'dbadmin'@'localhost';
 GRANT all privileges ON MCP.* TO dbadmin@localhost;
