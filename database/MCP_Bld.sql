@@ -64,8 +64,7 @@ CREATE TABLE Cart (
 	unitCost decimal(6,2),
 	qty int(3),
 	totalCost decimal(8,2),
-	FOREIGN KEY(custId) REFERENCES Customer(custId),
-	FOREIGN KEY(stockNum) REFERENCES Product(stockNum)
+	PRIMARY KEY(custId, stockNum)
 );
 
 CREATE TABLE Invoice (
