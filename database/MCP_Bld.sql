@@ -59,13 +59,11 @@ CREATE TABLE Card (
 );
 
 CREATE TABLE Cart (
-	cartId varchar(10) NOT NULL,
+	custId varchar(8) NOT NULL,
 	stockNum varchar(10),
 	unitCost decimal(6,2),
 	qty int(3),
 	totalCost decimal(8,2),
-	custId varchar(8) NOT NULL,
-	PRIMARY KEY(cartId, stockNum),
 	FOREIGN KEY(custId) REFERENCES Customer(custId),
 	FOREIGN KEY(stockNum) REFERENCES Product(stockNum)
 );
