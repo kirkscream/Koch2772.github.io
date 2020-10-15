@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <style>
         @font-face {
             font-family: 'Mystical';
@@ -9,6 +10,7 @@
         }
     </style>
     
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8" />
     <meta name="author" content="T Temby, J Gibson, Author 3, Author 4" />
     <meta name="description" content="Assignment 2 - COMP2772" />

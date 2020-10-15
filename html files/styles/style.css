@@ -189,7 +189,7 @@ ul#menu {
     border-bottom: solid;
     border-bottom-color: #ddd;
     margin: auto;
-    width: 50%;
+    width: 70%;
     padding: 10px;
 
     /**
@@ -209,7 +209,7 @@ ul#menu {
     text-align: center;
 }
 
-#menu a {
+#menuAbout, #menuCat, #menuFAQ {
     font-family: 'Mystical', arial;
     font-size: 36px;
     text-shadow: 4px 4px 4px #aaa;
@@ -230,6 +230,21 @@ ul#menu {
     color: #1565c0;
     font-weight: bold;
 }
+/** CART MENU LINK/TEXT **/
+
+#carttotal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#carttext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+}
+
 
 /** PRODUCT PAGE **/
 

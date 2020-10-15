@@ -20,6 +20,7 @@ function check_qty($conn, $stockNum, $qty) {
     }
     mysqli_stmt_close($stmt);
     
+    // remove error line later
     echo mysqli_error($conn);
     mysqli_close($conn);
 }
@@ -27,11 +28,12 @@ function check_qty($conn, $stockNum, $qty) {
 // Function to add items into a cart as well as custId
 function add_to_cart($conn, $custId, $stockNum, $unitCost, $qty) {
     $totalCost = $unitCost * $qty;
-    $query = "INSERT INTO cart(stockNum, unitcost, qty, totalCost custId)";
+    $query = "INSERT INTO cart(custId, stockNum, unitcost, qty, totalCost) VALUES(?, ?, ?, ?, ?);";
 
     $stmt = mysqli_prepare($conn, $query);
 
     if ($stmt) {
+        mysqli_stmt_bind_param($stmt, "sssss", $custId, $stockNum, $unitCost, $qty, $totalCost);
         $outcome = mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         return $outcome;
@@ -39,6 +41,10 @@ function add_to_cart($conn, $custId, $stockNum, $unitCost, $qty) {
     } else {
         return FALSE;
     }
+
+    // remove error line later
+    echo mysqli_error($conn);
+    mysqli_close($conn);
 }
 
 ?>

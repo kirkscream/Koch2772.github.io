@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <style>
-    @font-face {
-        font-family: 'Mystical';
+        @font-face {
+            font-family: 'Mystical';
             src: url(fonts/DsMysticora-d9dZ.ttf);
-    }
+        }
     </style>
     
     <link rel="stylesheet" href="styles/style.css">
