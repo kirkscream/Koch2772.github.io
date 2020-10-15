@@ -27,9 +27,12 @@
 
         <div class="productslist">
             <div class="product-container">
+                
+                <!-- Need to reference image in product database and insert -->  
                 <img src="https://via.placeholder.com/100" alt="productimg">
                 <div class="product-desc">
 
+                    <!-- Need to change into a DB Function to allow easy product insertion -->  
                     <?php
                     require_once "inc/dbconn.inc.php";
                     $sql = "SELECT productName, description FROM product WHERE productName = 'Basilisk fang';";

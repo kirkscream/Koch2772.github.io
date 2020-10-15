@@ -35,7 +35,7 @@
             <div class="product-info-container">
             
             <div class="mysticfont"><h3>Pheonix Feather</h3></div>
-            <div class="price"><h4>$63</h4></div>
+            <div class="price"><h4>$N/A</h4></div>
             <div class="buy-now"><button class="centerd-button"> Buy Now</button></div>
             <br>
             <div class="add-to-cart"><button class="centerd-button"> Add to cart</button></div>

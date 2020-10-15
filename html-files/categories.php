@@ -38,7 +38,7 @@
 
                 <li>
                     <div class="category-product">
-                        <a href="#">
+                        <a href="category-uniHorns.php">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Unicorn Horns</h2>
                         </a>
@@ -47,7 +47,7 @@
 
                 <li>
                     <div class="category-product">
-                        <a href="#">
+                        <a href="category-phoenixFeathers.php">
                             <img src="https://via.placeholder.com/300x300" alt="productimg">
                             <h2>Phoenix Feathers</h2>
                         </a>
@@ -56,9 +56,9 @@
 
                 <li>
                     <div class="category-product">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/300x300" alt="productimg">
-                            <h2>TEST</h2>
+                        <a href="category-DS.php">
+                            <img src="productimages/PinkDragonScales.jpg" alt="productimg">
+                            <h2>Dragon Scales</h2>
                         </a>
                     </div>
                 </li>
