@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
-    <link rel="stylesheet" href="styles/log_in.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -17,17 +17,18 @@ $stat = status();
 ?>
 
 <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
   <?php 
   $results = get_cart($conn);
 
   foreach ($results as $row ) { ?>
     <div class="cart-container">
-        <div class="cart"><?php echo $row['productName']; ?></div>
+        <div class="cart"><?php echo $row['productName']; ?> | 
+        <a href="javascript:void(0)" id="removebtn" onclick="remove_item($conn, $row['stockNum'])">Remove</a></div>
         <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
         <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
         <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
-        <span class="cart">Total: $<?php echo $row['totalCost']; ?></span>
+        <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
       </div>
       <?php } ?>
 </div>
@@ -56,7 +57,8 @@ $stat = status();
                     <?php 
                 } else { ?>
                     <a href="#" id="carttotal">? ITEM | $??</a>
-                <?php } ?>
+                <?php } 
+                mysqli_close($conn);?>
 
                 <a href="#" id="carttext" onclick="openNav()">View Cart /</a>
                 <a href="#" id="carttext">Checkout</a>

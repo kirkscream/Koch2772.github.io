@@ -134,4 +134,16 @@ function get_cart($conn) {
 
 }
 
+function remove_item($conn, $stockNum) {
+    $query = "DELETE FROM cart WHERE custId=? && stockNum=?;";
+
+    $stmt = mysqli_prepare($conn, $query);
+
+    if ($stmt) {
+        mysqli_stmt_bind_param($stmt, "ss", $_SESSION['id'], $stockNum);
+        mysqli_stmt_execute($stmt);
+    }
+
+}
+
 ?>
