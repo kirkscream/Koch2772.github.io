@@ -1,0 +1,15 @@
+.div_lgn {
+	padding:25px;
+}
+	
+.usr, .pwd {
+	padding: 5px;
+	margin-top: 3px;
+	max-width: 100px;
+}
+	
+#sub {
+	background-color: black;
+	color: #00fc4c;
+	margin-top: 20px;
+}

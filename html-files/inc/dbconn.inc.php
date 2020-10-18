@@ -13,3 +13,15 @@ if (!$conn) {
     echo "Debugging error: " . mysqli_connect_error() . "<br>";
     exit;
 }
+
+function status(){
+    // Check if the user is already logged in, if yes then redirect him to welcome page
+    if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+        $stat = "Logged in.";
+    } else {
+        $stat = "Not logged in.";
+    }
+    return $stat;
+    }
+    
+?>
