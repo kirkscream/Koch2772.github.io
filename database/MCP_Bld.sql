@@ -13,7 +13,7 @@ CREATE TABLE Customer(
 	PRIMARY KEY(custId)
 ) AUTO_INCREMENT = 1;
 
-CREATE TABLE Login(
+CREATE TABLE Details(
 	custId varchar(8) NOT NULL,
 	usrNme varchar (20) NOT NULL,
 	pwd varchar (20)NOT NULl,

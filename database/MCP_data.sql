@@ -9,16 +9,16 @@ INSERT INTO Customer VALUES ('0008', 'Mr', 'Walter', 'Wall');
 INSERT INTO Customer VALUES ('0009', 'Mr', 'Dale', 'Neverno');
 INSERT INTO Customer VALUES ('0010', 'Miss', 'Lotta', 'Noyes');
 
-INSERT INTO Login VALUES ('0001', 'peeceW', 'j3t747');
-INSERT INTO Login VALUES ('0002', 'firsth', 'j3llyf1sh');
-INSERT INTO Login VALUES ('0003', 'anatuj', 'h0tc0f33');
-INSERT INTO Login VALUES ('0004', 'orderl', 'b00kcas3');
-INSERT INTO Login VALUES ('0005', 'talityf', 'd3adrit3');
-INSERT INTO Login VALUES ('0006', 'crowdt', 'n0m0re');
-INSERT INTO Login VALUES ('0007', 'poolej', 'chl0r1ne');
-INSERT INTO Login VALUES ('0008', 'wallw', 'l1n0leum');
-INSERT INTO Login VALUES ('0009', 'nevernod', '1gn0rant');
-INSERT INTO Login VALUES ('0010', 'noyesl', 'drumk1t');
+INSERT INTO Details VALUES ('0001', 'peeceW', 'j3t747');
+INSERT INTO Details VALUES ('0002', 'firsth', 'j3llyf1sh');
+INSERT INTO Details VALUES ('0003', 'anatuj', 'h0tc0f33');
+INSERT INTO Details VALUES ('0004', 'orderl', 'b00kcas3');
+INSERT INTO Details VALUES ('0005', 'talityf', 'd3adrit3');
+INSERT INTO Details VALUES ('0006', 'crowdt', 'n0m0re');
+INSERT INTO Details VALUES ('0007', 'poolej', 'chl0r1ne');
+INSERT INTO Details VALUES ('0008', 'wallw', 'l1n0leum');
+INSERT INTO Details VALUES ('0009', 'nevernod', '1gn0rant');
+INSERT INTO Details VALUES ('0010', 'noyesl', 'drumk1t');
 
 INSERT INTO CustResAddr VALUES ('0001', '34 Yellow Brick Road', 'Asbury Park', '21047', '03548 621 6711', 'wp67@home.today');
 INSERT INTO CustResAddr VALUES ('0002', '3 Abbey Road', 'Mansfield', '19045', '84566 004 7470', 'jpgr4@lunch.right.now');
