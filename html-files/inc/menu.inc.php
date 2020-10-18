@@ -24,10 +24,10 @@ $stat = status();
   foreach ($results as $row ) { ?>
     <div class="cart-container">
         <div class="cart"><?php echo $row['productName']; ?></div>
-        <span class="cart"><?php echo $row['stockNum']; ?></span>
-        <div class="cart"><?php echo $row['unitCost']; ?></div>
-        <span class="cart"><?php echo $row['qty']; ?></span>
-        <span class="cart"><?php echo $row['totalCost']; ?></span>
+        <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
+        <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
+        <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
+        <span class="cart">Total: $<?php echo $row['totalCost']; ?></span>
       </div>
       <?php } ?>
 </div>
