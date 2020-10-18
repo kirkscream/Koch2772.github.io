@@ -47,4 +47,56 @@ function add_to_cart($conn, $custId, $stockNum, $unitCost, $qty) {
     mysqli_close($conn);
 }
 
+function update_cart_total($conn) {
+
+    if ($_SESSION["id"]) {
+        $cartTotal = 0;
+        $query = "SELECT qty FROM cart WHERE custId = ?;";
+
+        $stmt = mysqli_prepare($conn, $query);
+
+        if ($stmt) {
+            mysqli_stmt_bind_param($stmt, "s", $_SESSION["id"]);
+            mysqli_stmt_execute($stmt);
+
+            mysqli_stmt_bind_result($stmt, $qty);
+            while (mysqli_stmt_fetch($stmt)) {
+                $cartTotal += $qty;
+            }
+        }
+
+        return $cartTotal;
+
+    } else {
+        return false;
+    }
+
+}
+
+function update_cart_cost($conn) {
+
+    if ($_SESSION["id"]) {
+        $cartCost = 0;
+        $query = "SELECT totalCost FROM cart WHERE custId = ?;";
+
+        $stmt = mysqli_prepare($conn, $query);
+
+        if ($stmt) {
+            mysqli_stmt_bind_param($stmt, "s", $_SESSION["id"]);
+            mysqli_stmt_execute($stmt);
+
+            mysqli_stmt_bind_result($stmt, $totalCost);
+            while (mysqli_stmt_fetch($stmt)) {
+                $cartCost += $totalCost;
+            }
+        }
+
+        return $cartCost;
+
+    } else {
+        return false;
+    }
+
+}
+
 ?>
