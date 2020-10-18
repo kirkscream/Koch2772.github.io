@@ -12,8 +12,26 @@ session_start();
 
 <body>
 <?php include "inc/dbconn.inc.php";
+require_once "db_functions.php";
 $stat = status();
 ?>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <?php 
+  $results = get_cart($conn);
+
+  foreach ($results as $row ) { ?>
+    <div class="cart-container">
+        <div class="cart"><?php echo $row['productName']; ?></div>
+        <span class="cart"><?php echo $row['stockNum']; ?></span>
+        <div class="cart"><?php echo $row['unitCost']; ?></div>
+        <span class="cart"><?php echo $row['qty']; ?></span>
+        <span class="cart"><?php echo $row['totalCost']; ?></span>
+      </div>
+      <?php } ?>
+</div>
+
 
 <div id="menucontainer">
     <ul id="menu">
@@ -24,7 +42,7 @@ $stat = status();
             <li>
                 <!-- UPDATES THE CART TOTAL/COST ON MENU
                     BASED OFF CURRENT USER -->
-                <?php require_once "db_functions.php";
+                <?php 
                 $cartTotal = update_cart_total($conn);
                 $cartCost = update_cart_cost($conn);
                 if($cartTotal != false && $cartCost != false) { ?>
@@ -36,25 +54,36 @@ $stat = status();
                                     echo "ITEM | ";
                                 } ?> $<?php echo $cartCost; ?></a>
                     <?php 
-                        echo mysqli_error($conn);
-                        mysqli_close($conn);
                 } else { ?>
                     <a href="#" id="carttotal">? ITEM | $??</a>
-                <?php }
+                <?php } ?>
 
-                ?>
-
-                <a href="#" id="carttext">View Cart /</a>
+                <a href="#" id="carttext" onclick="openNav()">View Cart /</a>
                 <a href="#" id="carttext">Checkout</a>
             </li>
             <i class="fa fa-shopping-cart" style="font-size:32px;color:purple"></i>
         </span>
         <div>
             <li><a href="Loginpage.html" id="menuLogin">Login /</a><a href="Logout.php" id="menuLogin">Logout</a></li>
-            <li class="menuStat">Status: </li><span class="dolstat"><?php echo $stat ?></span>
+            <li class="menuStat">Status: </li><span class="dolstat"><?php 
+                                    if ($_SESSION["loggedin"]) {
+                                        echo $stat; echo $_SESSION["username"]; ?></span> <?php
+                                    } else {
+                                        echo $stat; ?></span> <?php
+                                    } ?>
         </div>
     </ul>
 </div>
-<!-- noyesl drumk1t - 0010 -->
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </body>
 </html>

@@ -123,6 +123,16 @@ a:hover h2 {
   height: auto;
 }
 
+/** CART **/
+
+.cart-container {
+    margin: 8px;
+}
+
+.cart {
+    color: darkorchid;
+}
+
 /** MAIN PAGE **/
     
  .mysticfont h1 {
@@ -493,3 +503,4 @@ p {
 	color: #00fc4c;
 	margin-top: 20px;
 }
+

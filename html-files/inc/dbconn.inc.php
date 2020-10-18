@@ -17,9 +17,9 @@ if (!$conn) {
 function status(){
     // Check if the user is already logged in, if yes then redirect him to welcome page
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-        $stat = "Logged in.";
+        $stat = "Logged in / Username: ";
     } else {
-        $stat = "Not logged in.";
+        $stat = "Not logged in";
     }
     return $stat;
     }

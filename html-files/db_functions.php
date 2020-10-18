@@ -99,4 +99,39 @@ function update_cart_cost($conn) {
 
 }
 
+function get_cart($conn) {
+    if ($_SESSION["id"]) {
+        $cartCost = 0;
+        $query = "SELECT product.productName, cart.stockNum, cart.unitCost, cart.qty, cart.totalCost 
+                    FROM product, cart
+                        WHERE product.stockNum = cart.stockNum && cart.custId = ?;";
+
+        $stmt = mysqli_prepare($conn, $query);
+        $results = array();
+
+        if ($stmt) {
+            mysqli_stmt_bind_param($stmt, "s", $_SESSION["id"]);
+            mysqli_stmt_execute($stmt);
+
+            mysqli_stmt_bind_result($stmt, $productName, $stockNum, $unitCost, $qty, $totalCost);
+            while (mysqli_stmt_fetch($stmt)) {
+                $row = array();
+                $row["productName"] = $productName;
+                $row["stockNum"] = $stockNum;
+                $row["unitCost"] = $unitCost;
+                $row["qty"] = $qty;
+                $row["totalCost"] = $totalCost;
+                
+                $results[] = $row;
+            }
+        }
+
+        return $results;
+
+    } else {
+        return false;
+    }
+
+}
+
 ?>
