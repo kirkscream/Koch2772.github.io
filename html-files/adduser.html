@@ -1,0 +1,46 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @font-face {
+            font-family: 'Mystical';
+            src: url(fonts/DsMysticora-d9dZ.ttf);
+        }
+    </style>
+    <meta charset="UTF-8">
+	<meta name="author" content="Kochanski Group - T Temby, J Gibson, B Gray, P Chu" />
+    <meta name="description" content="Assignment 2 - COMP2772" />
+    <title>Add User</title>
+    <link rel="stylesheet" href="styles/log_in.css">
+</head>
+
+<body>
+    <div class="div1">
+        <h2 class="hlog">Sign Up</h2>
+        <p>Complete this form to create an account.</p>
+        <form action="adduser.php" method="POST">
+            <div class="formtxt">
+                <label class="lbl">Username</label><br>
+                <input type="text" name="username" class="txtbx" required>
+            </div>    
+            <div class="formtxt">
+                <label class="lbl">Password</label><br>
+                <input type="password" name="password" class="txtbx" required>
+            </div>
+            <div class="formtxt">
+                <label>Confirm Password</label><br>
+                <input type="password" name="confirm_password" class="txtbx" required>
+            </div>
+            <div class="formtxt">
+                <input type="submit" class="button" value="Submit">
+                <input type="reset" class="bttn" value="Reset">
+            </div>
+            <p>Already have an account? <a href="loginpage.html" id="sun">Login here</a>.</p>
+        </form>
+    </div>    
+</body>
+</html>
