@@ -546,6 +546,14 @@ p {
     color: darkblue;
 }
 
+.dolstat{
+    font-family: 'Mystical', arial;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-decoration: none;
+    color: black;
+}
+
 /** LOGIN PAGES.CSS **/
 
 .div_lgn {

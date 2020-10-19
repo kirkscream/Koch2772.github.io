@@ -11,7 +11,7 @@ $_SERVER["REQUEST_METHOD"] == "POST";
 	$uname = trim($_POST['username']);
 	
     // Prepare a select statement
-    $sql = "SELECT usrnme FROM Details WHERE usrnme = ?";
+    $sql = "SELECT usrNme FROM Details WHERE usrNme = ?";
         
     $stmt = mysqli_prepare($conn, $sql);
     // Bind variables to the prepared statement as parameters
@@ -50,7 +50,7 @@ $_SERVER["REQUEST_METHOD"] == "POST";
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO Details (usrnme, pwd) VALUES (?, ?)";
+        $sql = "INSERT INTO Details (usrNme, pwd) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters

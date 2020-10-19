@@ -6,6 +6,8 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kochanski Group - T Temby, J Gibson, B Gray, P Chu" />
+    <meta name="description" content="Assignment 2 - COMP2772" />
     <title>Menu</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
