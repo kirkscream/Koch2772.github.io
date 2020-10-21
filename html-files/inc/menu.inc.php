@@ -25,17 +25,21 @@ $stat = status();
 ?>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-        <?php $results = get_cart($conn);
+        <?php 
+        if ($_SESSION['loggedin']) {
+            $results = get_cart($conn);
             foreach ($results as $row ) { ?>
-
-        <div class="cart-container">
-        <div class="cart"> <form method="post"><label for="button1"><?php echo $row['productName']; ?> | </label><button id="removebtn" name="button1" value="<?php echo $row['stockNum']; ?>" type="submit">Remove</button></form></div>
-        <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
-        <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
-        <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
-        <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
-        </div>
-        <?php } ?>
+                <div class="cart-container">
+                <div class="cart"> <form method="post"><label for="button1"><?php echo $row['productName']; ?> | </label><button id="removebtn" name="button1" value="<?php echo $row['stockNum']; ?>" type="submit">Remove</button></form></div>
+                <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
+                <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
+                <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
+                <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
+                </div>
+        <?php }
+        } else {
+            echo "<p> Cart is Empty</p>"; 
+        } ?>
 
     <?php 
     if ($_SESSION['loggedin']) {
