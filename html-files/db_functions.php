@@ -143,7 +143,6 @@ function remove_item($conn, $stockNum) {
         mysqli_stmt_bind_param($stmt, "ss", $_SESSION['id'], $stockNum);
         mysqli_stmt_execute($stmt);
     }
-
 }
 
 ?>

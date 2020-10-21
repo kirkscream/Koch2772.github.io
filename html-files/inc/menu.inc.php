@@ -33,6 +33,8 @@ $stat = status();
         <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
       </div>
       <?php } ?>
+
+      <a href="shippingdetail.php" id="Checkout">Check out</a>
 </div>
 
 

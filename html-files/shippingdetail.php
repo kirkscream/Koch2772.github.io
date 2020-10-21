@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/shipping_style.css">
+    <link rel="stylesheet" href="styles/shipping_styles.css">
     <style>
         @font-face {
             font-family: 'Mystical';
