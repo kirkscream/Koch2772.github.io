@@ -109,7 +109,7 @@
   </div>
   <div class = ship-button>
    
-    <button type="submit" value="back" id="backButton" name='shipBack'>Continue shopping</button>
+    <button type="submit" value="back" id="backButton" name='shipBack' onClick="window.location='index.php'">Continue shopping</button>
 
 
     <button type="submit" value="submit" id="submitButton" name="shipSubmit">Submit</button>
