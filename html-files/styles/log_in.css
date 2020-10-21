@@ -2,12 +2,41 @@
 
 body {
     font: 14px sans-serif;
+    margin-bottom:60px;
 }
         
 .div1 {
-    width: 550px;
-    margin-left: 25px;
-    padding: 15px;
+    max-width: 400px;
+    width:100%;
+    margin:0 auto;
+    position: relative;
+}
+
+.mysticfont h1
+{
+    text-align: center;
+    font-family: 'Mystical', arial;
+    font-size: 600%;
+    text-shadow: 1% 1% 1% #bbb;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #6f136c;
+}
+
+.section 
+{
+    color:black;
+    max-width:300px;
+    width:100%;
+	margin:0 auto;
+	position:relative;
+    background-color:#ccb7e4 !important;
+    border-color: #ccb7e4;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    
 }
 
 .div2 {
@@ -44,6 +73,12 @@ p {
     border-radius: 4px;
     margin-top: 5px;
 }
+
+.txtbx:hover
+{
+    border:1px solid orange ;
+}
+
 
 .formtxt {
     margin-top: 12px;
