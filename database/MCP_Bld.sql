@@ -48,6 +48,7 @@ CREATE TABLE Product (
 	description varchar(300),
 	unitCost decimal(6,2),
 	stockQty int(8),
+	category varchar(300),
 	PRIMARY KEY(stockNum)
 );
 
