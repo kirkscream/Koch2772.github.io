@@ -110,10 +110,11 @@
   <div class = ship-button>
    
     <button type="submit" value="back" id="backButton" name='shipBack'>Continue shopping</button>
-</form>
+
 
     <button type="submit" value="submit" id="submitButton" name="shipSubmit">Submit</button>
     <!--<button type="submit" value="back" id="backButton" name='shipBack'>Continue shopping</button>-->
+    </form>
 </div>
 
 <div class = "reminder">
