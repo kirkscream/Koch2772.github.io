@@ -6,13 +6,18 @@ CREATE DATABASE MCP;
 USE MCP;
 
 CREATE TABLE Customer(
-	custId varchar(8) NOT NULL,
+	custId id AUTO_INCREMENT PRIMARY KEY,
 	title varchar(8),
 	fname varchar(40) NOT NULL,
 	lname varchar(40) NOT NULL,
+	phone varchar(14) NOT NULL DEFAULT 555,
+	email varchar(100),
+	usrNme varchar (20) NOT NULL UNIQUE,
+	pwd varchar (20)NOT NULl,
 	PRIMARY KEY(custId)
 ) AUTO_INCREMENT = 1;
 
+/*
 CREATE TABLE Details(
 	custId varchar(8) NOT NULL,
 	usrNme varchar (20) NOT NULL,
@@ -41,6 +46,7 @@ CREATE TABLE CustDelAddr(
 	PRIMARY KEY(custId),
 	FOREIGN KEY(custId) REFERENCES Customer(custId)
 );
+*/
 
 CREATE TABLE Product (
 	stockNum varchar(10) NOT NULL,
@@ -69,12 +75,20 @@ CREATE TABLE Cart (
 );
 
 CREATE TABLE Invoice (
-	invoiceId char(10) NOT NULL,
-	custId varchar(8)NOT NULL,
+	custId varchar(8)NOT NULL PRIMARY KEY,
+	invoiceId AUTO_INCREMENT PRIMARY KEY,
 	invoiceDate	timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	address varchar(45) NOT NULL,
+	address2 varchar(45),
+	apartType varchar(45),
+	Suburb varchar(45) NOT NULL,
+	galaxy varchar(45) NOT NULL,
+	system varchar(45) NOT NULL,
+	Postcode char(5) NOT NULL,
+	phone varchar(14) NOT NULL DEFAULT 555,
 	deliveryFee decimal(5,2),
 	finCost decimal(8,2) NOT NULL,
-	PRIMARY KEY (invoiceId),
+	PRIMARY KEY (custId, invoiceId),
 	FOREIGN KEY(custId) REFERENCES Customer(custId)
 );
 
