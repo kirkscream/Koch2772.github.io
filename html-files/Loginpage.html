@@ -20,9 +20,13 @@ session_start();
 
 <body>
     <div class="div1">
+	 <div class="mysticfont">
+            <h1>Mystic Shop</h1>
+          </div>
         <!-- Page title -->
         <h2 class="hlog">Login</h2>
-        <p>Please fill in your credentials to login.</p>
+	    <div class = "section'>
+        	<p>Please fill in your credentials to login.</p>
         
         <!-- Make login details available to authentication page -->
         <form name="loginform" action="login.php" method="POST">
@@ -44,6 +48,7 @@ session_start();
 			</div>
             <p>Don't have an account? <a href="adduser.html" id="sun">Sign up now.</a></p>
         </form>
+	</div>
     </div>    
 </body>
 </html>
