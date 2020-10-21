@@ -1,0 +1,117 @@
+
+.sub-Heading {
+    font-family:'Mystical', Arial, sans-serif;
+    font-size: 20px;   
+}
+
+.customerdetail {
+    max-width:400px;
+	width:100%;
+	margin:50px auto;
+	position:relative;
+    background-color:#ccb7e4 !important;
+    border-color: #ccb7e4;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#custTitle{
+    width:18%;
+    border:1px solid #aaa;
+    outline:none;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left:2%;
+    border-radius: 4px;
+}
+
+#fName {
+    width: 30%; 
+    border:1px solid  #aaa;
+    outline:none;
+    padding:8px;
+    display:inline;
+    margin-left:1%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#lName {
+    width: 36%; 
+    border:1px solid  #aaa;
+    outline:none;
+    padding:8px;
+    display:inline;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#email, #Address, #Suburb, #Phone, #Postcode, #uname, #pword, #conf_pword {   
+    width:90%;
+    border:1px solid  #aaa;
+    outline:none;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 2%;
+    border-radius: 4px;
+}
+
+#fName:hover, #lName:hover,#email:hover, #Address:hover, #Suburb:hover, #Phone:hover,#Postcode:hover {
+    border:1px solid orange ;
+}
+
+#fName:focus, #lName:focus, #email:focus, #Address:focus, #Suburb:focus, #Phone:focus, #Postcode:focus {
+    border:2px solid orange;
+}
+
+label {
+    font-family: 'Mystical', Helvetica, sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.res, .p-Num, .e-mail, .upword{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.backButton, .submitButton, .resetButton {
+    background-color: rgb(100, 44, 212);
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    float: right;
+    border: 1px solid  rgb(100, 44, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 4px;
+}
+
+.submitButton:hover, .backButton:hover, .resetButton:hover {
+    background-color: darkmagenta;
+}
+
+.reminder{
+    margin-top: 100px;
+}
+
+#shipReminder {
+    color: red;
+    text-align: center;
+    font-size: 22px;
+}
+
+#list-ship-detail {
+    font-size: 20px;
+    text-align: left;
+    padding-left:20px;
+    padding-bottom:50px;
+    margin-top: 10px;
+}

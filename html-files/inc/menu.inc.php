@@ -15,6 +15,7 @@ session_start();
 <body>
 <?php include "inc/dbconn.inc.php";
 require_once "db_functions.php";
+$stat = status();
     if(array_key_exists('button1', $_POST)) { 
         remove_item($conn, $_POST['button1']);
     
@@ -40,7 +41,7 @@ require_once "db_functions.php";
     if ($_SESSION['loggedin']) {
         echo "<a href='shippingdetail.php' id='Checkout'>Check out</a>";
     } else {
-        echo "<p>Sign in to use cart</p>";
+        echo "<a href='loginpage.php' id='Checkout'>Sign in to use cart!</a>";
     } ?>
 
 </div>
