@@ -40,7 +40,7 @@
                 <!-- Item -->  
                 <li>
                     <div class="category-product-1x4">
-                        <a href="product-whiteUniHorn.php">
+                        <a href="product-.php">
                             <img src="productimages/Unicorn Horn.jpg" alt="productimg">
                             <h2>White Unicorn Horn</h2>
                         </a>
@@ -50,7 +50,7 @@
                 <!-- Item -->  
                 <li>
                     <div class="category-product-1x4">
-                        <a href="product-phoenixF.php">
+                        <a href="product-phnx7330.php">
                             <img src="productimages/Phoenix Feather.jpg" alt="productimg">
                             <h2>Phoenix Feather</h2>
                         </a>
@@ -60,7 +60,7 @@
                 <!-- Item -->  
                 <li>
                     <div class="category-product-1x4">
-                        <a href="product-fang.php">
+                        <a href="product-basi9550.php">
                             <img src="productimages/Basilisk Fang.jpg" alt="productimg">
                             <h2>Basilisk Fang</h2>
                         </a>
@@ -70,7 +70,7 @@
                 <!-- Item -->  
                 <li>
                     <div class="category-product-1x4">
-                        <a href="product-bronzeDS.php">
+                        <a href="product-drag6510.php">
                             <img src="productimages/BronzeDragonScales.jpg" alt="productimg">
                             <h2>Bronze Dragon Scale</h2>
                         </a>
