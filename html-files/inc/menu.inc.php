@@ -15,26 +15,28 @@ session_start();
 <body>
 <?php include "inc/dbconn.inc.php";
 require_once "db_functions.php";
-$stat = status();
-?>
+        if(array_key_exists('button1', $_POST)) { 
+            remove_item($conn, $_POST['button1']);
+            
 
+        } 
+        echo '';
+?>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-  <?php 
-  $results = get_cart($conn);
+  <?php $results = get_cart($conn);
+        foreach ($results as $row ) { ?>
 
-  foreach ($results as $row ) { ?>
     <div class="cart-container">
-        <div class="cart"><?php echo $row['productName']; ?> | 
-        <a href="javascript:void(0)" id="removebtn" onclick="remove_item($conn, $row['stockNum'])">Remove</a></div>
+    
+        
+        <div class="cart"> <form method="post"><label for="button1"><?php echo $row['productName']; ?> | </label><button id="removebtn" name="button1" value="<?php echo $row['stockNum']; ?>" type="submit">Remove</button></form></div>
         <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
         <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
         <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
         <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
       </div>
       <?php } ?>
-
-      <a href="shippingdetail.php" id="Checkout">Check out</a>
 </div>
 
 
@@ -64,8 +66,8 @@ $stat = status();
                 <?php } 
                 mysqli_close($conn);?>
 
-                <a href="#" id="carttext" onclick="openNav()">View Cart /</a>
-                <a href="#" id="carttext">Checkout</a>
+                <a href="" id="carttext" onclick="openNav()">View Cart /</a>
+                <a href="" id="carttext">Checkout</a>
             </li>
             <i class="fa fa-shopping-cart" style="font-size:32px;color:purple"></i>
         </span>
