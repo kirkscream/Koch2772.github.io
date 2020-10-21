@@ -15,26 +15,29 @@ session_start();
 <body>
 <?php include "inc/dbconn.inc.php";
 require_once "db_functions.php";
-$stat = status();
+    if(array_key_exists('button1', $_POST)) { 
+        remove_item($conn, $_POST['button1']);
+    
+
+    } 
+    echo '';
 ?>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+        <?php $results = get_cart($conn);
+            foreach ($results as $row ) { ?>
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-  <?php 
-  if ($_SESSION['loggedin']) {
-
-  $results = get_cart($conn);
-
-  foreach ($results as $row ) { ?>
-    <div class="cart-container">
-        <div class="cart"><?php echo $row['productName']; ?> | 
-        <a href="javascript:void(0)" id="removebtn" onclick="remove_item($conn, $row['stockNum'])">Remove</a></div>
+        <div class="cart-container">
+        <div class="cart"> <form method="post"><label for="button1"><?php echo $row['productName']; ?> | </label><button id="removebtn" name="button1" value="<?php echo $row['stockNum']; ?>" type="submit">Remove</button></form></div>
         <span class="cart">ID: <?php echo $row['stockNum']; ?></span>
         <div class="cart">Cost: <?php echo $row['unitCost']; ?></div>
         <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
         <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
-      </div>
-      <?php } 
+        </div>
+        <?php } ?>
+
+    <?php 
+    if ($_SESSION['loggedin']) {
         echo "<a href='shippingdetail.php' id='Checkout'>Check out</a>";
     } else {
         echo "<p>Sign in to use cart</p>";
