@@ -21,6 +21,8 @@ $stat = status();
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
   <?php 
+  if ($_SESSION['loggedin']) {
+
   $results = get_cart($conn);
 
   foreach ($results as $row ) { ?>
@@ -32,9 +34,12 @@ $stat = status();
         <span class="cart">Quantity: <?php echo $row['qty']; ?></span>
         <span class="cart"> | Total: $<?php echo $row['totalCost']; ?></span>
       </div>
-      <?php } ?>
+      <?php } 
+        echo "<a href='shippingdetail.php' id='Checkout'>Check out</a>";
+    } else {
+        echo "<p>Sign in to use cart</p>";
+    } ?>
 
-      <a href="shippingdetail.php" id="Checkout">Check out</a>
 </div>
 
 
